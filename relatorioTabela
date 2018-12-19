@@ -1,0 +1,75 @@
+<form id="parceiro" name="parceiro" method="post" enctype="multipart/form-data" action="parceiros.php">
+							<div class="form-group">
+
+								<div class="row">
+									<div class="col-sm-4">
+										<label for="nome">Nome:</label>
+										<input type="text" class="form-text" id="nome" name="nome" placeholder="" required><p></p>
+										<label for="logo">Logo:</label>
+										<input type="file" name="logo" id="logo" class="file" size="20" required/>
+										<label for="link">Link:</label>
+										<input type="text" class="form-text" id="link" name="link" placeholder="" required><p></p>
+									</div>
+									<div class="col-sm-4">
+										<input type="submit" name="insert" class="btn btn-secondary btn-sm" value="Adicionar"/>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<table id="table_servicos" class="table" border="1" >
+						<tr border"1" bgcolor="#2e4868" bgcolor="">
+							<td id="td_parceiros" >
+								<p id="p_servicos">Nome</p>
+							</td>
+							<td id="td_parceiros">
+								<p id="p_servicos">Logo</p>
+							</td>
+							<td id="td_parceiros">
+								<p id="p_servicos">Link</p>
+							</td>
+							<td id="td_parceiros">
+								<p id="p_servicos">Ações</p>
+							</td>
+
+						</tr>
+						<?php
+						$stmt = $parceiro->index();
+						while($row = $stmt->fetch(PDO::FETCH_OBJ)){
+							?>
+							<form id="parceiros" name="parceiros" method="post" enctype="multipart/form-data" action="parceiros.php" onsubmit="return confirm('Confirmar ação?')">
+							<tr border"1">
+
+								<td id="td_parceiros">
+									<div class="form-group">
+										<input type="text" name="nome" id="nome" placeholder="" value="<?php echo $row->nome; ?>">
+									</div>
+								</td>
+
+								<td id="td_parceiros">
+									<div class="form-group">
+										<?php echo "<img src='images/parceiros/$row->logo' width=30%/>" ?>
+
+										<input type="file" name="logo" id="logo" placeholder="" value="<?php echo $row->logo; ?>">
+										<br>	
+									</div>
+								</td>
+								<td id="td_parceiros">
+									<div class="form-group">
+										<input type="text" name="link" id="link" class="form-text" placeholder="" value="<?php echo $row->link; ?>">
+									</div>
+								</td>
+								<td id="td_parceiros">
+									<input type="hidden" name="id" value="<?php echo $row->id; ?>">
+									<button type="submit" name="edit" class="btn btn-success btn-sm" style="background-color: #47a447; margin-left: 3px; margin-top: 10px;">Editar</button>
+									<button type="submit" name="delete" class="btn btn-danger btn-sm" style="margin-left: 3px; margin-top: 10px;">Excluir</button>
+								</td>
+							</tr>
+						</form>
+						<?php
+					}
+					?>
+				</table>
+			</div>

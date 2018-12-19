@@ -1,0 +1,553 @@
+/*
+*
+*   @author:    Juliana Cristina;
+*   @author:    Nayara Oliveira <nayaraoliveira558@gmail.com>;
+*   @author:    Talita Santos;
+*/
+
+body{
+    padding-bottom:200px;
+    position:relative;
+}
+
+#main {
+    margin-top: 50px;
+}
+
+#menu {
+    background-color: #526f99;
+    border-color: #fff;
+    font-size: 15px;
+    font-family: GalanoGrotesque;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*   Página de Inicio
+/* ---------------------------------------------------------------------- */
+
+#inicio{
+    padding-top: 70px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    flex-grow: 1;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h4 {
+    text-align: center;
+}
+
+.container-fluid{
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Fontes
+/* ---------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "GalanoGrotesqueAltLight";
+  src: url('../fonts/GalanoGrotesqueAltLight.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: "GalanoGrotesque";
+  src: url('../fonts/GalanoGrotesque.otf') format('opentype');
+}
+
+h1{
+    font-family: GalanoGrotesqueAltLight;
+}
+
+h2{
+    font-family: GalanoGrotesque;
+    font-size: 40px;
+    padding-bottom: 50px:;
+}
+
+#tipo{
+    width: auto;
+       padding: 5px;
+       line-height: 1;
+       border: 0;
+       border-radius: 0;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*   Botões
+/* ---------------------------------------------------------------------- */
+
+
+#botao {
+    z-index: 2;
+    margin-top: 10%;
+    font-family: GalanoGrotesqueAltLight;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #526f99;
+    border-color: #526f99;
+    font-family: GalanoGrotesqueAltLight;
+}
+
+.align{
+    text-align: center;
+}
+
+#pesquisar {
+    background-color: #526f99;
+    color: #fff;
+    font-family: GalanoGrotesqueAltLight;
+
+}
+
+#limpar {
+    background-color: #526f99;
+    color: #fff;
+    margin-left: 5%;
+    font-family: GalanoGrotesqueAltLight;
+
+}
+
+#filtro {
+    background-color: #526f99;
+    color: #fff;
+    margin-top: 0px;
+    margin-right: 27px;
+    font-family: GalanoGrotesqueAltLight;
+
+}
+
+#inputFiltro {
+    margin-top: -43px;
+}
+
+#btncadastrar {
+    background-color: #526f99;
+    font-family: GalanoGrotesqueAltLight;
+    color: #fff;
+}
+
+#btnresponsivo {
+    background-color: #526f99;
+    color: #fff;
+    font-family: GalanoGrotesqueAltLight;
+
+}
+#add{
+    color: #fff;
+    width: 33px;
+}
+#remove{
+    color: #fff;
+    width: 33px;
+}
+
+.btn.btn-signin {
+    background-color: rgb(104, 145, 162);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+.btn.btn-signin:hover, .btn.btn-signin:active, .btn.btn-signin:focus {
+    background-color: rgb(0, 74, 143);
+}
+.forgot-password {
+    color: rgb(104, 145, 162);
+}
+.forgot-password:hover, .forgot-password:active, .forgot-password:focus {
+    color: rgb(0, 74, 143);
+}
+.btn.btn-senha {
+    background-color: rgb(104, 145, 162);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+.btn.btn-senha:hover, .btn.btn-senha:active, .btn.btn-senha:focus {
+    background-color: rgb(0, 74, 143);
+}
+.btnentrar {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.btnsenha{
+    font-weight: 700;
+    width: 36px;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#toggleButton {
+    border-color: #fff;
+}
+
+
+ @media (min-width:320px) {
+    #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: -76%;
+    }
+}
+
+@media (min-width:480px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: -85%;
+    }
+}
+
+@media (min-width:600px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: -89%;
+    }
+}
+
+@media (min-width:768px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+    }
+}
+
+@media (min-width:800px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: -66%
+    }
+}
+
+@media (min-width:960px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: -26%;
+    }
+}
+
+@media (min-width:1024px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: -15%;
+    }
+}
+
+@media (min-width:1280px) {
+        #btnresponsivo {
+        background-color: #526f99;
+        color: #fff;
+        margin-left: 18%;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Imagens
+/* ---------------------------------------------------------------------- */
+
+#imgcabecalho {
+    max-width: 300px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#menu {
+    background-color: #526f99;
+    border-color: #fff;
+    font-size: 15px;
+    font-family: GalanoGrotesque;
+}
+
+#logovisao {
+    height: 15px ;
+}
+
+.icon-bar {
+    background-color: #fff !important;
+}
+
+
+.imagem {
+    width: 50px;
+}
+
+.imagemlogin {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.formrespostas {
+    margin-top: -7%;
+    margin-left: 5%;
+}
+
+.formopcoes {
+    margin-top: -4%;
+    margin-left: 3%;
+}
+
+
+.container img {
+    max-width: 100%;
+}
+
+nav ul {
+   display: flex;
+   width: 100%;
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Footer
+/* ---------------------------------------------------------------------- */
+
+#footer {
+    background-color: #526f99;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    right:0;
+    left:0;
+    font-family: GalanoGrotesqueAltLight;
+    position: absolute;
+}
+#footer p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #F5F5F5;
+    padding-top: 5px;
+ }
+
+
+/* ---------------------------------------------------------------------- */
+/*   Modal
+/* ---------------------------------------------------------------------- */
+
+ .modal-header {
+    background-color: #617ea9;
+    color: #fff;
+    font-family: GalanoGrotesque;
+
+}
+.modal-body{
+    font-family: GalanoGrotesqueAltLight;
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Tabelas
+/* ---------------------------------------------------------------------- */
+
+tr {
+    font-family: GalanoGrotesque;
+}
+.tableResponder{
+    box-sizing: content-box;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Cards: Página de Login
+/* ---------------------------------------------------------------------- */
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.classLogin, .login{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(104, 145, 162), rgb(0,74,143));
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Forms
+/* ---------------------------------------------------------------------- */
+
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail, .form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email], .form-signin input[type=password], .form-signin input[type=text], .form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+}
+
+input{
+    background-color: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #a0a0a0;
+    outline: none;
+    width:auto;
+
+}
+
+
+
+/* div senha incorreta */
+.senhaIncorreta{
+    color: #cc3434;
+    display: none;
+}
+
+
+/*
+ * Final do Css da página de login
+ */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+/*   Caixa de Respostas
+/* ---------------------------------------------------------------------- */
+
+#resposta {
+    margin-top: 5%;
+}
+
+
+
+.respDivs {
+    margin-top: 4%;
+}
+
+
+.invisivel{
+    display: none;
+}
+
